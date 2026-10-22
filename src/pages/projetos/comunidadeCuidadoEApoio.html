@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="./../../img/favicon-32x32.png" type="image/png">
+  <link href="./../../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./../../js/biblia.js"></script>
+  <script src="./../../js/hour.js"></script>
+  <script src="../../js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+    <!-- <img src="img/logo.png" alt="Logo">
+    <h1 class="text-5xl font-bold text-sky-950 m-10">Em construção...</h1>-->
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative bg-rosa-200/20">
+    <div class="container ">
+      <div class="lg:grid-cols-2 grid gap-4 ">
+        <div class="p-8 lg:mt-10 md:mt-10 sm:mt-3 mt-7 md:mb-10 sm:mb-3 mb-7 relative">
+          <div class="relative w-auto h-[500px] overflow-hidden">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto1.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" id="img1">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto2.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img2">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto3.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img3">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto4.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img4">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto5.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img5">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto6.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img6">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto7.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img7">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto8.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img8">
+            <img src="./../../img/comunidadeCuidadoEApoio/bg-Foto9.jpg" alt="Projeto Comunidade Cuidado e Apoio" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" id="img9">
+          </div>
+          <div id="corpo" class="absolute inset-0 z-10 bg-rosa-200/40 ">
+          </div>
+          <div class="p-0 font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm  mt-5 text-center lg:hidden relative z-20">
+            <h1 class="mb-5">Projeto Comunidade Cuidado e Apoio</h1>
+            <div class="lg:text-base md:text-base sm:text-sm">
+              <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+                <i>"É um sentimento que os membros têm de pertencer, de que são importantes uns para os outros e para o grupo, e uma fé compartilhada de que as suas necessidades serão atendidas por meio de seu compromisso de estarem juntos". (McMillan e Chavis, 1986)</i>
+              </p>
+              <br>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                O Colégio Sagrada Família é a única escola de Leme/SP a integrar a Rede de Comunidades de Cuidado e Apoio do Brasil. Vem saber mais sobre este projeto!
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                A escola é um espaço que concentra grande parte dos desafios e as diversidades da sociedade, que se somam ao propósito de educar. É na escola que as pessoas passam grande parte do início de suas vidas, assim, é nela que aprendem a socializar, desenvolvendo e exercendo os valores morais e convivendo com as diferenças. Neste cenário, tendem a aparecer divergências comuns e esperadas nas relações interpessoais, entendidas como conflitos naturais da convivência, assim, lidar com estes conflitos de forma construtiva e saudável é um desafio que deve ser enfrentado por toda a comunidade escolar.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Neste intento, faz-se extremamente necessário que as instituições de ensino adotem para si a responsabilidade pela boa convivência, traçando estratégias de prevenção de violências e de restauração, no caso de violências que já ocorreram. Neste intento, as Comunidades de Cuidado e Apoio (CCA) entre estudantes são uma forma de Protagonismo Juvenil e podem ser descritas como um tipo de Sistema de Apoio entre Iguais (SAI).
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Este projeto é parte da implementação de um programa de convivência na escola e seu objetivo principal é o de melhorar a qualidade da convivência na escola a partir do protagonismo dos alunos, conectando uns aos outros entre pares, desenvolvendo valores morais e prevenindo violências. Esta proposta foi desenvolvida a partir dos estudos do GEPEM (Grupo de Estudos e Pesquisas em Educação Moral) da UNESP/UNICAMP e apresenta evidências científicas de resultados a partir de diversas universidades. Os alunos passam por formação sobre a convivência ética durante as aulas de Socioemocional e Convivência, depois, são escolhidos pelos pares os alunos a serem convidados a participar da CCA, que, posteriormente, passam por uma formação com nossa tutora responsável, a psicóloga Yeda, e são por ela acompanhados e orientados ao longo do ano.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Algumas pesquisas têm mostrado resultados positivos a partir do trabalho junto às CCAs, como: redução da incidência de bullying nas escolas com um SAI; diferença significativa do ponto de vista das intimidações nas escolas, ou seja, acontecem mais intimidações nas escolas que não têm este projeto (LAPA, 2019); alunos participantes têm maior adesão a valores morais que aqueles que não participam e demais alunos de escolas com este projeto têm maior adesão a valores morais do que escolas sem (BONFIM, 2019) por exemplo.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Ademais, vale destacar que pesquisas também apontaram que os alunos pertencentes à CCA têm maior adesão a valores morais mesmo que percebam a disciplina parental menos assertiva, o que indicava que os valores morais tinham a ver com a escola (DE NADAI, 2019). Deste modo, também os alunos participantes demonstraram que suas crenças de autoeficácia para ajudar são mais altas em comparação aos alunos que não participam (SOUZA, 2019).
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Por conseguinte, faz-se importante enaltecer que, Naylor e Cowie (1999) verificaram que propostas de SAI são positivas e benéficas para o ambiente escolar, considerando que o bullying pode ser detectado mais rapidamente pelos colegas, já que a confiança depositada em alguém do mesmo nível hierárquico é maior que àquela a uma autoridade. Com tais atuações, os alvos têm a quem pedir ajuda, beneficiando quem precisa e, também, quem ajuda, pois as alunas e os alunos que se envolvem nesse tipo de protagonismo melhoram suas habilidades sociais e de autoconfiança.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Assim, nesta perspectiva a escola é percebida como uma comunidade que se importa com as relações entre os alunos, considerando que o propósito deste projeto se desdobra na formação de alunos que defendam a convivência como um valor, desejando e escolhendo o bem, com atitudes respeitosas, generosas e humanas.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                A atuação de nossos alunos já resultou em muitas ações positivas, como em uma produção fotográfica que integrou o livro: “Estrangeiros na própria terra: convivência escolar e bullying na perspectiva da Psicologia Moral”, de Luciene R. Paulino Tognetta. Algumas destas fotos foram transformadas na exposição “Mãos, pés e olhos de gente que cuida de gente”, exposta na Unicamp no VI Encontro Nacional das Equipes de Ajuda do Brasil, em Setembro de 2024.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Para conhecer mais sobre esta proposta e as pesquisas citadas, acesse: www.somoscontraobullying.com.br
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Algumas imagens ajudam a demonstrar o papel de nossos alunos, desde a inserção do projeto nas aulas, passando pelo Dia da Formação, as participações dos alunos nos Encontros Nacionais, as intervenções na escola e a produção fotográfica de nossos alunos.
+              </p>
+              <br>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Referências Bibliográficas:
+              </p>
+              <br>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                <i>BOMFIM, S. A. B. <b>Respeito, justiça e solidariedade no coração de quem ajuda:</b> valores morais e protagonismo entre alunos para combater o bullying. Dissertação de mestrado. Unesp, 2019. Disponível em: <a class="underline" id="link1" target="_blank" href="https://repositorio.unesp.br/handle/11449/181390">Acesse aqui</a>.</i>
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                <i>DE NADAI, S. T. <b>Disciplina de educação parental e participação em processo de vitimização entre pares.</b> Dissertação de mestrado. Unesp, 2019. Disponível em: <a class="underline" target="_blank" href="http://hdl.handle.net/11449/181513">Acesse aqui</a></i>
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                <i>LAPA, L. Z. <b>Valentes contra obullying: a implantação das Equipes de Ajuda, uma experiência brasileira.</b> Dissertação de mestrado. Unesp, 2019. Disponível em: <a class="underline" target="_blank" href="https://repositorio.unesp.br/handle/11449/181907">Acesse aqui</a></i>
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                <i>NAYLOR, P.; Cowie, H. The effectiveness of peer support systems in challenging school bullying: the perspectives and experiences of teachers and pupils. Journal of adolescence, v. 22, n. 4, 1999, p. 467– 479. <a class="underline" target="_blank" href="https://doi.org/10.1006/jado.1999.0241">Acesse aqui</a></i>
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                <i>SOUZA, R. A. <b>Quando a mão que acolhe é igual a minha:</b> a ajuda em situações de (cyber)bullying entre adolescentes. Dissertação de mestrado. Unesp, 2019. Disponível em: <a class="underline" target="_blank" href="https://repositorio.unesp.br/handle/11449/181590">Acesse aqui</a></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm pt-8 pb-8 lg:mt-10 mb-20 text-center lg:block md:hidden sm:hidden hidden">
+          <h1 class="mb-5">Projeto Comunidade Cuidado e Apoio</h1>
+          <div class="lg:text-base md:text-base sm:text-sm ">
+            <p class="mr-8 leading-relaxed text-justify font-bold indent-8">
+              <i>"É um sentimento que os membros têm de pertencer, de que são importantes uns para os outros e para o grupo, e uma fé compartilhada de que as suas necessidades serão atendidas por meio de seu compromisso de estarem juntos". (McMillan e Chavis, 1986)</i>
+            </p>
+            <br>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              O Colégio Sagrada Família é a única escola de Leme/SP a integrar a Rede de Comunidades de Cuidado e Apoio do Brasil. Vem saber mais sobre este projeto!
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              A escola é um espaço que concentra grande parte dos desafios e as diversidades da sociedade, que se somam ao propósito de educar. É na escola que as pessoas passam grande parte do início de suas vidas, assim, é nela que aprendem a socializar, desenvolvendo e exercendo os valores morais e convivendo com as diferenças. Neste cenário, tendem a aparecer divergências comuns e esperadas nas relações interpessoais, entendidas como conflitos naturais da convivência, assim, lidar com estes conflitos de forma construtiva e saudável é um desafio que deve ser enfrentado por toda a comunidade escolar.
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Neste intento, faz-se extremamente necessário que as instituições de ensino adotem para si a responsabilidade pela boa convivência, traçando estratégias de prevenção de violências e de restauração, no caso de violências que já ocorreram. Neste intento, as Comunidades de Cuidado e Apoio (CCA) entre estudantes são uma forma de Protagonismo Juvenil e podem ser descritas como um tipo de Sistema de Apoio entre Iguais (SAI).
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Este projeto é parte da implementação de um programa de convivência na escola e seu objetivo principal é o de melhorar a qualidade da convivência na escola a partir do protagonismo dos alunos, conectando uns aos outros entre pares, desenvolvendo valores morais e prevenindo violências. Esta proposta foi desenvolvida a partir dos estudos do GEPEM (Grupo de Estudos e Pesquisas em Educação Moral) da UNESP/UNICAMP e apresenta evidências científicas de resultados a partir de diversas universidades. Os alunos passam por formação sobre a convivência ética durante as aulas de Socioemocional e Convivência, depois, são escolhidos pelos pares os alunos a serem convidados a participar da CCA, que, posteriormente, passam por uma formação com nossa tutora responsável, a psicóloga Yeda, e são por ela acompanhados e orientados ao longo do ano.
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Algumas pesquisas têm mostrado resultados positivos a partir do trabalho junto às CCAs, como: redução da incidência de bullying nas escolas com um SAI; diferença significativa do ponto de vista das intimidações nas escolas, ou seja, acontecem mais intimidações nas escolas que não têm este projeto (LAPA, 2019); alunos participantes têm maior adesão a valores morais que aqueles que não participam e demais alunos de escolas com este projeto têm maior adesão a valores morais do que escolas sem (BONFIM, 2019) por exemplo.
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Ademais, vale destacar que pesquisas também apontaram que os alunos pertencentes à CCA têm maior adesão a valores morais mesmo que percebam a disciplina parental menos assertiva, o que indicava que os valores morais tinham a ver com a escola (DE NADAI, 2019). Deste modo, também os alunos participantes demonstraram que suas crenças de autoeficácia para ajudar são mais altas em comparação aos alunos que não participam (SOUZA, 2019).
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Por conseguinte, faz-se importante enaltecer que, Naylor e Cowie (1999) verificaram que propostas de SAI são positivas e benéficas para o ambiente escolar, considerando que o bullying pode ser detectado mais rapidamente pelos colegas, já que a confiança depositada em alguém do mesmo nível hierárquico é maior que àquela a uma autoridade. Com tais atuações, os alvos têm a quem pedir ajuda, beneficiando quem precisa e, também, quem ajuda, pois as alunas e os alunos que se envolvem nesse tipo de protagonismo melhoram suas habilidades sociais e de autoconfiança.
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Assim, nesta perspectiva a escola é percebida como uma comunidade que se importa com as relações entre os alunos, considerando que o propósito deste projeto se desdobra na formação de alunos que defendam a convivência como um valor, desejando e escolhendo o bem, com atitudes respeitosas, generosas e humanas.
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              A atuação de nossos alunos já resultou em muitas ações positivas, como em uma produção fotográfica que integrou o livro: “Estrangeiros na própria terra: convivência escolar e bullying na perspectiva da Psicologia Moral”, de Luciene R. Paulino Tognetta. Algumas destas fotos foram transformadas na exposição “Mãos, pés e olhos de gente que cuida de gente”, exposta na Unicamp no VI Encontro Nacional das Equipes de Ajuda do Brasil, em Setembro de 2024.
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Para conhecer mais sobre esta proposta e as pesquisas citadas, acesse: www.somoscontraobullying.com.br
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Algumas imagens ajudam a demonstrar o papel de nossos alunos, desde a inserção do projeto nas aulas, passando pelo Dia da Formação, as participações dos alunos nos Encontros Nacionais, as intervenções na escola e a produção fotográfica de nossos alunos.
+            </p>
+            <br>
+            <p class="mr-8 leading-relaxed text-right font-medium indent-8">
+              Referências Bibliográficas:
+            </p>
+            <br>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              <i>BOMFIM, S. A. B. <b>Respeito, justiça e solidariedade no coração de quem ajuda:</b> valores morais e protagonismo entre alunos para combater o bullying. Dissertação de mestrado. Unesp, 2019. Disponível em: <a target="_blank" href="https://repositorio.unesp.br/handle/11449/181390">https://repositorio.unesp.br/handle/11449/181390</a>.</i>
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              <i>DE NADAI, S. T. <b>Disciplina de educação parental e participação em processo de vitimização entre pares.</b> Dissertação de mestrado. Unesp, 2019. Disponível em: <a target="_blank" href="http://hdl.handle.net/11449/181513">http://hdl.handle.net/11449/181513</a></i>
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              <i>LAPA, L. Z. <b>Valentes contra obullying: a implantação das Equipes de Ajuda, uma experiência brasileira.</b> Dissertação de mestrado. Unesp, 2019. Disponível em: <a target="_blank" href="https://repositorio.unesp.br/handle/11449/181907">https://repositorio.unesp.br/handle/11449/181907</a></i>
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              <i>NAYLOR, P.; Cowie, H. The effectiveness of peer support systems in challenging school bullying: the perspectives and experiences of teachers and pupils. Journal of adolescence, v. 22, n. 4, 1999, p. 467– 479. <a target="_blank" href="https://doi.org/10.1006/jado.1999.0241">https://doi.org/10.1006/jado.1999.0241</a></i>
+            </p>
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              <i>SOUZA, R. A. <b>Quando a mão que acolhe é igual a minha:</b> a ajuda em situações de (cyber)bullying entre adolescentes. Dissertação de mestrado. Unesp, 2019. Disponível em: <a target="_blank" href="https://repositorio.unesp.br/handle/11449/181590">https://repositorio.unesp.br/handle/11449/181590</a></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>
+
+    const images = ["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9"];
+    let index = 0;
+
+    setInterval(() => {
+      // Esconder todas
+      images.forEach(id => {
+        document.getElementById(id).classList.remove("opacity-100");
+        document.getElementById(id).classList.add("opacity-0");
+      });
+
+      // Mostrar atual
+      document.getElementById(images[index]).classList.remove("opacity-0");
+      document.getElementById(images[index]).classList.add("opacity-100");
+
+      // Próxima imagem
+      index = (index + 1) % images.length;
+    }, 4000); // Troca a cada 4 segundos
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="./../../img/favicon-32x32.png" type="image/png">
+  <link href="./../../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./../../js/hour.js"></script>
+  <script src="./../../js/biblia.js"></script>
+  <script src="../../js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+    <!-- <img src="img/logo.png" alt="Logo">
+    <h1 class="text-5xl font-bold text-sky-950 m-10">Em construção...</h1>-->
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative bg-rosa-200/20">
+    <div class="container ">
+      <div class="lg:grid-cols-2 grid gap-4 ">
+        <div class="p-8 lg:mt-10 md:mt-10 sm:mt-3 mt-7 md:mb-10 sm:mb-3 mb-7 relative">
+          <div class="relative w-auto h-[500px] overflow-hidden flex justify-center items-center">
+            <img src="./../../img/cooperativa/bg-Foto1.jpg" alt="Projeto Cooperativa Mirim" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" id="img1">
+
+            <!-- Vídeo final -->
+            <video id="videoFinal" class="absolute inset-0 max-w-full max-h-full m-auto opacity-0 transition-opacity duration-1000" autoplay muted playsinline>
+              <source src="./../../img/cooperativa/videos/cooperativa-mirim.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+            <button id="ativarSom" class="absolute top-4 right-4 z-50 bg-white text-azul-700 px-3 py-1 rounded shadow hover:bg-gray-100">
+              🔊 Ativar Som
+            </button>
+          </div>
+          <div id="corpo" class="absolute inset-0 bg-rosa-200/40 ">
+          </div>
+          <div class="p-0 font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm  mt-5 text-center lg:hidden relative z-20">
+            <h1 class="mb-5">Projeto Cooperativa Mirim</h1>
+            <div class="lg:text-base md:text-base sm:text-sm ">
+              <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+                É um espaço de exercício e simulação do cotidiano de uma cooperativa para crianças e adolescentes, oportunizando aprendizado e vivência prática sobre a filosofia cooperativista e processos que envolvem uma cooperativa.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                O Programa Cooperativa Mirim, que acontece com a parceria do Sicoob Crediacil e Sicoob Mantiqueira, tem finalidade educacional e se ampara no Estatuto da Criança e do Adolescente – Lei nº 8.069, de 13 de julho de 1990, e na Lei nº 5764/71, que define a Política Nacional de Cooperativismo.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                A metodologia ocorre de forma transversal e interdisciplinar e tem como objetivo o desenvolvimento de competências, hábitos e atitudes por meio de práticas pedagógicas que disseminam os princípios do cooperativismo, harmonizando-os aos interesses com a comunidade, obtendo responsabilidades sociais, morais e coletivas dentro e fora do ambiente escolar.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm pt-8 pb-8 lg:mt-10 mb-20 text-center lg:block md:hidden sm:hidden hidden">
+          <h1 class="mb-5">Projeto Cooperativa Mirim</h1>
+          <div class="lg:text-base md:text-base sm:text-sm ">
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              É um espaço de exercício e simulação do cotidiano de uma cooperativa para crianças e adolescentes, oportunizando aprendizado e vivência prática sobre a filosofia cooperativista e processos que envolvem uma cooperativa.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              O Programa Cooperativa Mirim, que acontece com a parceria do Sicoob Crediacil e Sicoob Mantiqueira, tem finalidade educacional e se ampara no Estatuto da Criança e do Adolescente – Lei nº 8.069, de 13 de julho de 1990, e na Lei nº 5764/71, que define a Política Nacional de Cooperativismo.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              A metodologia ocorre de forma transversal e interdisciplinar e tem como objetivo o desenvolvimento de competências, hábitos e atitudes por meio de práticas pedagógicas que disseminam os princípios do cooperativismo, harmonizando-os aos interesses com a comunidade, obtendo responsabilidades sociais, morais e coletivas dentro e fora do ambiente escolar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>
+
+    const img1 = document.getElementById("img1");
+    const video = document.getElementById("videoFinal");
+    const botaoSom = document.getElementById("ativarSom");
+
+    function mostrarImagem() {
+      img1.classList.remove("opacity-0");
+      img1.classList.add("opacity-100");
+
+      video.classList.remove("opacity-100");
+      video.classList.add("opacity-0");
+
+      botaoSom.classList.add("hidden");
+
+      setTimeout(() => {
+        mostrarVideo();
+      }, 4000);
+    }
+
+    function mostrarVideo() {
+      img1.classList.remove("opacity-100");
+      img1.classList.add("opacity-0");
+
+      video.classList.remove("opacity-0");
+      video.classList.add("opacity-100");
+
+      video.currentTime = 0;
+      video.muted = true;
+      video.play();
+
+      botaoSom.classList.remove("hidden");
+    }
+
+    botaoSom.addEventListener("click", () => {
+      video.muted = false;
+      video.volume = 1;
+      video.play();
+      botaoSom.classList.add("hidden");
+    });
+
+    video.addEventListener("ended", () => {
+      mostrarImagem();
+    });
+
+    // Início do ciclo
+    mostrarImagem();
+  </script>
+</body>
+
+</html>

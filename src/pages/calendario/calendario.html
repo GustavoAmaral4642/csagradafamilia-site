@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="./../../img/favicon-32x32.png" type="image/png">
+  <link href="./../../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./../../js/hour.js"></script>
+  <script src="./../../js/biblia.js"></script>
+  <script src="./../../js/eventos.js"></script>
+  <script src="./../../js/calendario.js"></script>
+  <script src="../../js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative bg-rosa-200/20">
+    <div class="container ">
+      <section class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-azul-700 text-center mb-8">Calendário de Eventos</h2>
+
+        <!-- Seletor de Ano -->
+        <div class="flex justify-center mb-6">
+          <div class="inline-flex rounded-lg border border-azul-700 overflow-hidden">
+            <button id="year2025" class="px-6 py-2 bg-white text-azul-700 hover:bg-azul-100 transition">2025</button>
+            <button id="year2026" class="px-6 py-2 bg-azul-700 text-white hover:bg-azul-800 transition">2026</button>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mb-4">
+          <button id="prevMonth" class="bg-azul-700 text-white px-4 py-2 rounded hover:bg-azul-800">← Anterior</button>
+          <h3 id="monthTitle" class="text-xl font-semibold text-azul-700"></h3>
+          <button id="nextMonth" class="bg-azul-700 text-white px-4 py-2 rounded hover:bg-azul-800">Próximo →</button>
+        </div>
+
+        <div id="calendar" class="bg-white rounded-lg shadow-md p-6 border border-rosa-200"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Popup de Imagem -->
+  <div id="popup" class="fixed inset-0 bg-black bg-opacity-80 hidden justify-center items-center z-50">
+    <div class="relative">
+      <button id="fecharPopup" class="absolute top-2 right-2 bg-white text-black px-2 py-1 rounded hover:bg-gray-200 font-bold text-sm z-10">✕</button>
+      <img id="imagemPopup" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg" />
+    </div>
+  </div>
+</body>
+
+</html>

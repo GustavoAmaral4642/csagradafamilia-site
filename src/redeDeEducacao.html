@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="./../../img/favicon-32x32.png" type="image/png">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./js/biblia.js"></script>
+  <script src="./js/hour.js"></script>
+  <script src="js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative bg-rosa-200/20 py-10">
+
+    <div class="font-bold text-azul-700 text-2xl text-center mb-5 pt-2 pb-2 ">
+      <h1 class="mb-5">Rede de Educação</h1>
+      <h1 class="mb-5">Projetos</h1>
+    </div>
+
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-rosa-200/20 text-azul-700 rounded-lg shadow-lg p-6 hover:shadow-2xl transition sm:ml-5 sm:mr-5">
+        <h2 class="text-xl font-bold mb-4">Centro de Formação Plácida Viel - Alto da Glória</h2>
+
+        <h3 class="font-bold text-center mb-3">
+          <a href="https://www.instagram.com/handebol_crescer_leme/" target="_blank">
+            Handebol
+            <i class="ml-1 mr-1 fa-brands fa-instagram text-azul-700 text-3xl"></i>
+          </a>
+          / Capoeira
+        </h3>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Rua: Afonso Gimenez, 80
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Alto da Glória, Leme/SP
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          CEP: 13.616.683
+        </p>
+        <p class="mr-8 leading-relaxed text-right font-normal">
+          maps
+          <a href="https://www.google.com/maps/place/R.+Affonso+Gimenez,+80+-+Jardim+Alto+da+Gl%C3%B3ria,+Leme+-+SP,+13616-683/@-22.1676311,-47.3717402,17z" target="_blank">
+            <i class="ml-1 mr-1 fa-solid fa-map-location-dot text-azul-700 text-3xl"></i>
+          </a>
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-rosa-200/20 text-azul-700 rounded-lg shadow-lg p-6 hover:shadow-2xl transition sm:ml-5 sm:mr-5">
+        <h2 class="text-xl font-bold mb-4">Centro de Formação Plácida Viel – Jardim Empyreo</h2>
+
+        <h3 class="font-bold text-center mb-3">
+          <a href="https://www.instagram.com/postelianabrasil/" target="_blank">
+            Confeitaria
+            <i class="ml-1 mr-1 fa-brands fa-instagram text-azul-700 text-3xl"></i>
+          </a>
+          /
+          <a href="https://www.instagram.com/postelianabrasil/" target="_blank">
+            Panificação
+            <i class="ml-1 mr-1 fa-brands fa-instagram text-azul-700 text-3xl"></i>
+          </a>
+          /
+          <a href="https://www.instagram.com/handebol_crescer_leme/" target="_blank">
+            Handebol
+            <i class="ml-1 mr-1 fa-brands fa-instagram text-azul-700 text-3xl"></i>
+          </a>
+        </h3>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Rua: Sebastião Osório Martins, 345
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Jardim Empyreo, Leme/SP
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          CEP: 13.611.832
+        </p>
+        <p class="mr-8 leading-relaxed text-right font-normal">
+          maps
+          <a href="https://www.google.com/maps/place/R.+Sebasti%C3%A3o+Os%C3%B3rio+Martins,+345,+Leme+-+SP,+13611-832/@-22.2128656,-47.3782336,17z" target="_blank">
+            <i class="ml-1 mr-1 fa-solid fa-map-location-dot text-azul-700 text-3xl"></i>
+          </a>
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-rosa-200/20 text-azul-700 rounded-lg shadow-lg p-6 hover:shadow-2xl transition sm:ml-5 sm:mr-5">
+        <h2 class="text-xl font-bold mb-4">Centro Comunitário de Santa Maria Madalena Postel</h2>
+
+        <h3 class="font-bold text-center mb-3">
+          Capoeira
+        </h3>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Rua: João Batista Bonatto, 47
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Jardim Imperial, Leme/SP
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          CEP: 13617-865
+        </p>
+        <p class="mr-8 leading-relaxed text-right font-normal">
+          maps
+          <a href="https://www.google.com/maps/place/R.+Jo%C3%A3o+Batista+Bonato,+47,+Leme+-+SP,+13617-865/@-22.2012653,-47.3618253,19z" target="_blank">
+            <i class="ml-1 mr-1 fa-solid fa-map-location-dot text-azul-700 text-3xl"></i>
+          </a>
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-rosa-200/20 text-azul-700 rounded-lg shadow-lg p-6 hover:shadow-2xl transition sm:ml-5 sm:mr-5">
+        <h2 class="text-xl font-bold mb-4">Floymarket</h2>
+
+        <h3 class="font-bold text-center mb-3">
+          <a href="https://www.instagram.com/brechosflohmarkt" target="_blank">
+            Bazar
+            <i class="ml-1 mr-1 fa-brands fa-instagram text-azul-700 text-3xl"></i>
+          </a>
+        </h3>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Rua: Maurício Pommer, 780
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Jardim Eroise, Leme/SP
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          CEP: 13.610.564
+        </p>
+        <p class="mr-8 leading-relaxed text-right font-normal">
+          maps
+          <a href="https://www.google.com/maps/place/R.+Maur%C3%ADcio+Pommer,+780+-+Jardim+Eroisi,+Leme+-+SP,+13610-564/@-22.199004,-47.3864277,17z" target="_blank">
+            <i class="ml-1 mr-1 fa-solid fa-map-location-dot text-azul-700 text-3xl"></i>
+          </a>
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-rosa-200/20 text-azul-700 rounded-lg shadow-lg p-6 hover:shadow-2xl transition sm:ml-5 sm:mr-5">
+        <h2 class="text-xl font-bold mb-4">Centro de Formação Natália Rios Duran</h2>
+
+        <h3 class="font-bold text-center mb-3">
+          <a href="https://www.instagram.com/maosquefazem.smmp/" target="_blank">
+            Projeto Mãos que Fazem
+            <i class="ml-1 mr-1 fa-brands fa-instagram text-azul-700 text-3xl"></i>
+          </a>
+          /
+          <a href="https://www.youtube.com/channel/UCJX03XypfuoPdBomqo07vBg" target="_blank">
+            Loja
+            <i class="ml-1 mr-1 fa-brands fa-youtube text-azul-700 text-3xl"></i>
+          </a>
+        </h3>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Avenida: Joaquim Lopes Águila, SN
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          Jardim Santa Inês, Leme/SP
+        </p>
+        <p class="mr-8 leading-relaxed text-left font-normal">
+          CEP: 13.614.032
+        </p>
+        <p class="mr-8 leading-relaxed text-right font-normal">
+          maps
+          <a href="https://www.google.com/maps/place/Av.+Joaquim+Lopes+Aguila+-+Centro,+Leme+-+SP,+13614-032/@-22.1812866,-47.3736075,17z" target="_blank">
+            <i class="ml-1 mr-1 fa-solid fa-map-location-dot text-azul-700 text-3xl"></i>
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+
+</html>

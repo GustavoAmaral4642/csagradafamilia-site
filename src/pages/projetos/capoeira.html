@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="./../../img/favicon-32x32.png" type="image/png">
+  <link href="./../../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./../../js/hour.js"></script>
+  <script src="./../../js/biblia.js"></script>
+  <script src="../../js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+    <!-- <img src="img/logo.png" alt="Logo">
+    <h1 class="text-5xl font-bold text-sky-950 m-10">Em construção...</h1>-->
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative bg-rosa-200/20">
+    <div class="container ">
+      <div class="lg:grid-cols-2 grid gap-4 ">
+        <div class="p-8 lg:mt-10 md:mt-10 sm:mt-3 mt-7 md:mb-10 sm:mb-3 mb-7 relative">
+          <img src="./../../img/capoeira/bg-Foto1.jpg" alt="Projeto Sagrada Familia - Capoeira" class="w-full h-auto">
+          <div id="corpo" class="absolute inset-0 bg-rosa-200/40 ">
+          </div>
+          <div class="p-0 font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm mt-5 text-center lg:hidden relative z-20">
+            <h1 class="mb-5">Capoeira Aurora - Janela para o Amanhecer</h1>
+            <div class="lg:text-base md:text-base sm:text-sm ">
+              <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+                A capoeira é uma expressão cultural afro-brasileira que combina luta, dança, música e história, sendo reconhecida como um valioso patrimônio imaterial da cultura nacional. Com seu caráter inclusivo e dinâmico, a capoeira é uma poderosa ferramenta para a promoção de cidadania, disciplina e autoestima, ajudando seus praticantes a desenvolverem autocontrole, resistência física e respeito às diferenças — qualidades essenciais para a construção de uma sociedade mais justa e integrada.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Desde 2008, o projeto social Capoeira Aurora - Janela para o Amanhecer, mantido pela Congregação de Santa Maria Madalena Postel, oferece aulas gratuitas de capoeira, com o objetivo de transformar vidas em Leme/SP. Iniciado pela Irmã Ludwigis e coordenado pelo Mestre Idael Sousa, o projeto começou no bairro Jardim Imperial e, hoje com o apoio da Irmã Aurora Tenfen, expandiu-se para outros bairros da cidade. Até hoje, o projeto já atendeu aproximadamente 800 crianças, além de muitos jovens e adultos, proporcionando um espaço de aprendizado, cidadania e valorização cultural.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Mais do que uma atividade física, o projeto visa reduzir a vulnerabilidade social dos participantes, oferecendo um ambiente inclusivo e de desenvolvimento cultural e educacional. Através de aulas e eventos, os alunos encontram um espaço seguro e acolhedor onde podem evoluir física e emocionalmente, fortalecendo seus vínculos comunitários e ampliando suas perspectivas para o futuro.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm pt-8 pb-8 lg:mt-10 mb-20 text-center lg:block md:hidden sm:hidden hidden">
+          <h1 class="mb-5">Capoeira Aurora - Janela para o Amanhecer</h1>
+          <div class="lg:text-base md:text-base sm:text-sm ">
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              A capoeira é uma expressão cultural afro-brasileira que combina luta, dança, música e história, sendo reconhecida como um valioso patrimônio imaterial da cultura nacional. Com seu caráter inclusivo e dinâmico, a capoeira é uma poderosa ferramenta para a promoção de cidadania, disciplina e autoestima, ajudando seus praticantes a desenvolverem autocontrole, resistência física e respeito às diferenças — qualidades essenciais para a construção de uma sociedade mais justa e integrada.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              Desde 2008, o projeto social Capoeira Aurora - Janela para o Amanhecer, mantido pela Congregação de Santa Maria Madalena Postel, oferece aulas gratuitas de capoeira, com o objetivo de transformar vidas em Leme/SP. Iniciado pela Irmã Ludwigis e coordenado pelo Mestre Idael Sousa, o projeto começou no bairro Jardim Imperial e, hoje com o apoio da Irmã Aurora Tenfen, expandiu-se para outros bairros da cidade. Até hoje, o projeto já atendeu aproximadamente 800 crianças, além de muitos jovens e adultos, proporcionando um espaço de aprendizado, cidadania e valorização cultural.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              Mais do que uma atividade física, o projeto visa reduzir a vulnerabilidade social dos participantes, oferecendo um ambiente inclusivo e de desenvolvimento cultural e educacional. Através de aulas e eventos, os alunos encontram um espaço seguro e acolhedor onde podem evoluir física e emocionalmente, fortalecendo seus vínculos comunitários e ampliando suas perspectivas para o futuro.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+
+</html>
