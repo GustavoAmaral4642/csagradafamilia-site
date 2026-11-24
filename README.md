@@ -11,6 +11,8 @@ Site institucional do Colégio Sagrada Família, com informações sobre a escol
 - Formulário de matrícula com geração de documento Word e envio por e-mail via PHP.
 - Exibição de data, hora, eventos e versículo bíblico consultado em uma API externa.
 
+A consulta de versículos é feita sem credenciais no navegador e depende da disponibilidade e dos limites de acesso público da API. Se a consulta falhar, a página usa o último versículo em cache ou apresenta uma mensagem de indisponibilidade. O token anteriormente incluído no JavaScript também deve ser revogado no provedor.
+
 ## Tecnologias
 
 - HTML5 e JavaScript.
@@ -61,16 +63,16 @@ npm ci
 Durante o desenvolvimento, mantenha este comando em execução:
 
 ```sh
-npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+npm run dev
 ```
 
 Para gerar uma versão minificada do CSS:
 
 ```sh
-npx tailwindcss -i ./src/input.css -o ./src/output.css --minify
+npm run build
 ```
 
-O projeto ainda não define scripts no `package.json`; os comandos acima executam o Tailwind diretamente.
+Os comandos compilam o Tailwind a partir de `src/input.css` e geram `src/output.css`.
 
 ### 3. Servir as páginas
 
@@ -92,9 +94,9 @@ O processamento do formulário exige PHP, Composer e acesso a um servidor SMTP. 
 composer install --working-dir=src/php
 ```
 
-Configure o envio em `src/php/enviarMatricula.php` e execute o site com um servidor que suporte PHP. O processo precisa de permissão de escrita em `src/php` para gerar o documento temporário da matrícula.
+Use `.env.example` como referência e configure `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `SMTP_FROM` e `SMTP_TO` no ambiente do servidor PHP. O PHP lê essas configurações com `getenv()`; copiar o modelo para `.env` não carrega os valores automaticamente. Mantenha as credenciais fora de `src`, a pasta pública do site.
 
-**Antes de publicar:** o arquivo PHP atualmente contém uma senha SMTP no código. Remova essa credencial, substitua-a por configuração externa ao repositório e altere a senha se ela já tiver sido compartilhada. O carregamento de variáveis de ambiente ainda precisa ser implementado.
+Execute o site em um servidor com suporte a PHP. O envio utiliza TLS com verificação de certificado e gera o documento no diretório temporário do sistema, removendo-o ao final da tentativa. Sem as configurações obrigatórias, o formulário informa que o serviço está indisponível. A senha que anteriormente estava no código deve ser alterada no provedor de e-mail.
 
 ## Manutenção
 
@@ -102,11 +104,11 @@ Configure o envio em `src/php/enviarMatricula.php` e execute o site com um servi
 - Ajuste as cores e demais personalizações do Tailwind em `tailwind.config.js`.
 - Utilize `src/input.css` como entrada dos estilos e recompile após alterações nas classes das páginas ou scripts.
 - Atualize imagens e documentos em `src/img` e `src/docs`, conferindo os links nas páginas correspondentes.
-- O cabeçalho e o rodapé atualmente estão repetidos nas páginas; a centralização em um arquivo compartilhado ainda não foi implementada.
+- Edite o cabeçalho, os links de navegação e o rodapé em **`src/js/layout.js`**. Todas as páginas usam esse arquivo por meio dos elementos `site-header` e `site-footer`. Ele também controla o menu mobile e resolve links a partir da raiz de `src`, inclusive nas subpastas. O carregamento desses componentes depende de JavaScript habilitado.
 
 ## Publicação
 
-O repositório contém uma configuração da Vercel com `src` como diretório de saída e `npm run build` como comando de build. Como esse script ainda não existe no `package.json`, será necessário adicioná-lo com o comando de compilação do Tailwind ou ajustar o comando de build na configuração antes do deploy.
+O repositório contém uma configuração da Vercel com `src` como diretório de saída e `npm run build` como comando de build. O script já está definido no `package.json` para gerar o CSS minificado.
 
 A publicação estática atende às páginas HTML, CSS, JavaScript e arquivos de mídia. O formulário de matrícula precisa de hospedagem com suporte a PHP ou de um backend separado; a publicação estática por si só não executa `enviarMatricula.php`.
 
@@ -114,8 +116,8 @@ A publicação estática atende às páginas HTML, CSS, JavaScript e arquivos de
 
 Antes do primeiro commit:
 
-- Remova as credenciais presentes no código.
-- Configure um `.gitignore` para excluir `node_modules/`, `src/php/vendor/`, `.idea/`, arquivos `.env`, logs e documentos temporários de matrícula (`src/php/matricula_*.docx`).
+- Configure as credenciais SMTP no servidor e altere a senha anteriormente presente no PHP.
+- O `.gitignore` já exclui `node_modules/`, `src/php/vendor/`, `.idea/`, arquivos `.env`, logs e documentos temporários de matrícula (`src/php/matricula_*.docx`). O modelo `.env.example` pode ser versionado.
 - Confira os arquivos enviados para evitar a inclusão de dados pessoais de alunos e responsáveis.
 - Mantenha os arquivos de dependências e seus respectivos lockfiles versionados, quando disponíveis.
 

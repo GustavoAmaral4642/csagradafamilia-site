@@ -1,0 +1,10 @@
+node_modules/
+src/php/vendor/
+.idea/
+.env
+.env.*
+!.env.example
+*.log
+error_log
+src/php/matricula_*.docx
+

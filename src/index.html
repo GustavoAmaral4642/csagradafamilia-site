@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./js/biblia.js"></script>
+  <script src="./js/trocaImagens.js"></script>
+  <script src="./js/hour.js"></script>
+  <script src="./js/eventosRecentes.js"></script>
+  <script src="js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+    <!-- <img src="img/logo.png" alt="Logo">
+    <h1 class="text-5xl font-bold text-sky-950 m-10">Em construção...</h1>-->
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative min-h-screen">
+    <div class="absolute inset-0 -z-10">
+      <img src="img/background/bg-intro-cut.png" alt="Faxada" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 bg-rosa-200/50 backdrop-blur-sm lg:flex items-center ">
+      <div class="
+        lg:grid lg:grid-cols-2 lg:gap-4 lg:container
+        max-lg:items-center">
+        <div class="font-bold text-azul-700 text-left pt-8 max-lg:mt-10 max-lg:text-center">
+          <h1 class="text-5xl mb-5">Colégio Sagrada Familia</h1>
+          <p class="text-lg uppercase mr-8">Viva Jesus em nossos corações!</p>
+          <p class="text-lg uppercase mr-8">Para sempre.</p>
+        </div>
+        <div class="relative w-9/12 max-lg:mt-14 max-lg:justify-center max-lg:ml-10 mb-2">
+          <video id="videoIntro" autoplay muted loop playsinline class="rounded-md shadow-lg w-full h-auto max-h-[400px] sm:max-h-[200px] md:max-h-[600px] object-cover">
+            <source src="img/inicial/apresentacao.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+          <button id="ativarSom" class="absolute top-4 right-4 z-50 bg-white text-azul-700 px-3 py-1 rounded shadow hover:bg-gray-100">
+            🔊 Ativar Som
+          </button>
+          <div class="absolute inset-0 bg-rosa-200/20 rounded-md"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>
+    const videoIntro = document.getElementById("videoIntro");
+    const botaoSom = document.getElementById("ativarSom");
+
+    botaoSom.addEventListener("click", () => {
+      videoIntro.muted = false;
+      videoIntro.volume = 1;
+
+      const playPromise = videoIntro.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            botaoSom.classList.add("hidden");
+          })
+          .catch((error) => {
+            console.error("Erro ao tentar reproduzir o vídeo com som:", error);
+          });
+      }
+    });
+  </script>
+</body>
+
+</html>

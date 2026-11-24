@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="./../../img/favicon-32x32.png" type="image/png">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./js/biblia.js"></script>
+  <script src="./js/hour.js"></script>
+  <script src="js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative bg-rosa-200/20">
+    <div class="container ">
+      <div class="lg:grid-cols-2 grid gap-4 ">
+        <div class="p-8 lg:mt-10 md:mt-10 sm:mt-3 mt-7 md:mb-10 sm:mb-3 mb-7 relative">
+          <img src="./img/historia/bg-historia1.jpg" alt="Projeto Sagrada Familia - Handebol" class="w-full h-auto">
+          <div id="corpo" class="absolute inset-0 bg-rosa-200/20 ">
+          </div>
+          <div class="p-0 font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm  mt-5 text-center lg:hidden relative z-20">
+            <h1 class="mb-5">História</h1>
+            <div class="lg:text-base md:text-base sm:text-sm ">
+              <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+                Uma história especial, iniciando a partir das necessidades das mães trabalhadoras, que não tinham com quem deixar seus filhos. Em 1961, Madre Eduarda saiu de casa em casa, de comércio em comércio, de sítio em sítio, pedindo auxílio para a construção. Corajosamente deu início a construção do prédio, que foi inaugurada em 28 de novembro de 1962. Tudo era muito pobre, todos os anos, no tempo da colheita as irmãs saiam pedindo nos sítios de Leme, cereais, frutos e tudo que fosse oferecido para alimentar as crianças. Em geral, as pessoas eram muito generosas e ofereciam muita coisa que tinham em casa.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Desde o início, a Creche abria as portas às 04h30min. As crianças chegavam ainda dormindo com as fraldas da noite. Necessitavam de banho, roupa limpa, agasalho, alimento e um berço ou caminha para continuar o sono interrompido.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                As mães embarcavam nos caminhões a caminho dos canaviais e só voltavam a noite, exaustas. As crianças eram filhos da creche, onde passavam a maior parte dos seus dias. Irmãs e funcionários davam o melhor de si para compensar a ausência dos pais. Irmã Maria Ludwigis Bilo foi o esteio que sustentou a Creche Sagrada Família durante cinquenta anos, passando por situações difíceis, sem nunca esmorecer, executando com funcionários todos os trabalhos necessários: cozinha, lavanderia, horta, limpeza, cuidado das crianças, trabalhando de doze a quinze horas por dia.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Outras irmãs durante todos estes anos, doaram seu trabalho na creche, tornaram as mães das crianças, encheram-se de carinho pelos peque-nos, tentando substituir as mães trabalhadoras dos canaviais e algodoeiras
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Além do cuidado das crianças, ainda precisavam levar as crianças à escola e buscá-los à tarde. Até que a prefeitura implantou nas dependências da Creche, a educação infantil e mais tarde as séries iniciais.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Em 2014, com uma nova proposta de educação as irmãs solicitam à Secretaria de Educação entregar os espaços cedidos à mesma para que a própria Congregação coordene as Etapas da Educação Infantil e a implantação das séries iniciais do Ensino Fundamental. A Sagrada Família passou a denominar-se Centro Educacional Sagrada Família.
+              </p>
+              <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+                Em função disto, começaram as exigências para adaptação do prédio à Educação, coisa que nunca sequer foi cogitado enquanto a educação era executada pela Secretaria de Educação Municipal, que custou enormes sacrifícios às irmãs. Sem executar as mínimas exigências impostas pelo governo municipal, recusaram a aprovação do Centro Educacional Sagrada Família que durante mais de cinquenta anos fez o trabalho que deveria ser executado pela Prefeitura. Finalmente em junho de 2016, todas as exigências foram executadas e veio à aprovação do Centro Educacional Sagrada Família. Implantamos o Ensino Fundamental I gradativo até completar o Fundamental II. Em 2022 iniciamos o Novo Ensino Médio, portando uma escola Filantrópica que oferece ensino do Berçário ao Ensino Médio. Nossa escola hoje é reconhecida como Colégio Sagrada Família.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="font-bold text-azul-700 lg:text-2xl md:text-base sm:text-sm pt-8 pb-8 lg:mt-10 mb-20 text-center lg:block md:hidden sm:hidden hidden">
+          <h1 class="mb-5">História</h1>
+          <div class="lg:text-base md:text-base sm:text-sm ">
+            <p class="mr-8 leading-relaxed text-justify font-medium indent-8">
+              Uma história especial, iniciando a partir das necessidades das mães trabalhadoras, que não tinham com quem deixar seus filhos. Em 1961, Madre Eduarda saiu de casa em casa, de comércio em comércio, de sítio em sítio, pedindo auxílio para a construção. Corajosamente deu início a construção do prédio, que foi inaugurada em 28 de novembro de 1962. Tudo era muito pobre, todos os anos, no tempo da colheita as irmãs saiam pedindo nos sítios de Leme, cereais, frutos e tudo que fosse oferecido para alimentar as crianças. Em geral, as pessoas eram muito generosas e ofereciam muita coisa que tinham em casa.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              Desde o início, a Creche abria as portas às 4:30am. As crianças chegavam ainda dormindo com as fraldas da noite. Necessitavam de banho, roupa limpa, agasalho, alimento e um berço ou caminha para continuar o sono interrompido.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              As mães embarcavam nos caminhões a caminho dos canaviais e só voltavam a noite, exaustas. As crianças eram filhos da creche, onde passavam a maior parte dos seus dias. Irmãs e funcionários davam o melhor de si para compensar a ausência dos pais. Irmã Maria Ludwigis Bilo foi o esteio que sustentou a Creche Sagrada Família durante cinquenta anos, passando por situações difíceis, sem nunca esmorecer, executando com funcionários todos os trabalhos necessários: cozinha, lavanderia, horta, limpeza, cuidado das crianças, trabalhando de doze a quinze horas por dia.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              Outras irmãs durante todos estes anos, doaram seu trabalho na creche, tornaram as mães das crianças, encheram-se de carinho pelos peque-nos, tentando substituir as mães trabalhadoras dos canaviais e algodoeiras
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              Além do cuidado das crianças, ainda precisavam levar as crianças à escola e buscá-los à tarde. Até que a prefeitura implantou nas dependências da Creche, a educação infantil e mais tarde as séries iniciais.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              Em 2014, com uma nova proposta de educação as irmãs solicitam à Secretaria de Educação entregar os espaços cedidos à mesma para que a própria Congregação coordene as Etapas da Educação Infantil e a implantação das séries iniciais do Ensino Fundamental. A Sagrada Família passou a denominar-se Centro Educacional Sagrada Família.
+            </p>
+            <p class=" mr-8 leading-relaxed text-justify font-medium indent-8">
+              Em função disto, começaram as exigências para adaptação do prédio à Educação, coisa que nunca sequer foi cogitado enquanto a educação era executada pela Secretaria de Educação Municipal, que custou enormes sacrifícios às irmãs. Sem executar as mínimas exigências impostas pelo governo municipal, recusaram a aprovação do Centro Educacional Sagrada Família que durante mais de cinquenta anos fez o trabalho que deveria ser executado pela Prefeitura. Finalmente em junho de 2016, todas as exigências foram executadas e veio à aprovação do Centro Educacional Sagrada Família. Implantamos o Ensino Fundamental I gradativo até completar o Fundamental II. Em 2022 iniciamos o Novo Ensino Médio, portando uma escola Filantrópica que oferece ensino do Berçário ao Ensino Médio. Nossa escola hoje é reconhecida como Colégio Sagrada Família.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+
+</html>
