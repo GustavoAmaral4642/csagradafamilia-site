@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagrada Familia</title>
+  <link rel="icon" href="./../../img/favicon-32x32.png" type="image/png">
+  <link href="./../../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./../../js/hour.js"></script>
+  <script src="./../../js/biblia.js"></script>
+  <script src="./../../js/calendario.js"></script>
+
+  <script src="../../js/layout.js" defer></script>
+</head>
+
+<body class="bg-cinzaClaro font-sans">
+  <div class="lg:container mt-4 lg:flex lg:justify-center max-lg:text-center ">
+    <div class="inline-flex items-center rounded-md bg-rosa-200">
+      <span class="size-2 bg-azul-700 block rounded-full relative -left-1"></span>
+      <div class="flex text-azul-700 divide-x-2 divide-azul-700">
+        <div class="px-4 py-2 capitalize" id="dia"></div>
+        <div class="px-4 py-2" id="hora"></div>
+      </div>
+    </div>
+    <div class="lg:text-right max-lg:text-center w-full max-lg:mt-5">
+      <p id="versiculo" class="text-xs font-bold text-cinza-500"></p>
+    </div>
+
+  </div>
+
+  <div id="site-header"></div>
+
+  <main class="relative bg-rosa-200/20 py-10">
+
+    <div class="font-bold text-azul-700 text-2xl text-center mb-5 pt-2 pb-2">
+      <h1 class="mb-5">Reportagens</h1>
+    </div>
+
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white text-azul-700 rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+        <h2 class="text-xl font-bold mb-4">Confira esta matéria de destaque da Revista Educação!</h2>
+
+        <div class="flex items-center gap-4 mb-4">
+
+            <!-- Imagem da reportagem -->
+            <img src="../../img/Reportagen.png"
+            alt="Reportagem da Revista Educação"
+            class="w-32 h-auto rounded-lg shadow-md shrink-0">
+
+            <!-- Descrição da reportagem -->
+            <div class="flex-1">
+                <p class="mb-4">"Unidos, alunos transformam a convivência escolar" (pág. 70)</p>
+
+                <p class="mb-4">
+                    A reportagem aborda como o Colégio Sagrada Família, através do
+                    projeto <strong>Comunidades de Cuidado e Apoio</strong> — orientado
+                    pelo renomado GEPEM (Unesp/Unicamp) e conduzido sob a tutoria da
+                    Psicóloga Escolar Yeda — tem transformado a rotina dos alunos.
+                </p>
+
+                <p>
+                    O texto reforça o valor de ações que incentivam a empatia,
+                    o apoio mútuo e a construção de um ambiente escolar ético,
+                    seguro e verdadeiramente acolhedor para a boa convivência! 🤍
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Botão da reportagem -->
+        <a href="https://heyzine.com/flip-book/f088cea20e.html#page/70" target="_blank"
+        class="inline-flex items-center px-4 py-2 bg-azul-700 text-white rounded hover:bg-azul-900 transition">
+            📖 Ler reportagem
+        </a>
+        </div>
+  </main>
+
+
+  <div id="site-footer"></div>
+</body>
+
+</html>

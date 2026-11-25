@@ -36,6 +36,7 @@
             <li><a class="block px-4 py-2 hover:bg-gray-100 lg:hover:bg-cinza-300 lg:hover:rounded-lg whitespace-nowrap" href="./pages/secretaria/matricula.html">Matrícula</a></li>
             <li><a class="block px-4 py-2 hover:bg-gray-100 lg:hover:bg-cinza-300 lg:hover:rounded-lg whitespace-nowrap" href="./pages/secretaria/listaMaterial.html">Lista de Material</a></li>
             <li><a class="block px-4 py-2 hover:bg-gray-100 lg:hover:bg-cinza-300 lg:hover:rounded-lg whitespace-nowrap" href="./pages/secretaria/regimentoEscolar.html">Regimento Escolar</a></li>
+            <li><a class="block px-4 py-2 hover:bg-gray-100 lg:hover:bg-cinza-300 lg:hover:rounded-lg whitespace-nowrap" href="./pages/secretaria/reportagens.html">Reportagens</a></li>
           </ul>
         </li>
         <li class="relative group">
